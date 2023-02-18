@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
@@ -11,11 +12,44 @@
 </head>
 
 <body>
-    <div class="pos-fixed top-0 left-0 right-0 bottom-0">
-        <div class="startImageContainer">
-            <img src="./img/" alt="">
+    <!-- Start window -->
+    <div class="topLayer pos-fixed top-0 left-0 right-0 bottom-0 display-flex alignItems-center justifyContent-center"
+        id="topLayer" style="display: flex;">
+        <div class="startImageContainer display-flex alignItems-center justifyContent-center flexDirec-col">
+            <div class="headingCont">
+                <div class="heading">
+                    <h1>Snake mania</h1>
+                </div>
+            </div>
+            <img src="./img/start.gif" alt="" draggable="false" id="startGameImg">
+            <div class="subHeadingCont headingCont">
+                <div class="subHeading">
+                    <p>
+                        click on
+                        <b>Snake</b>
+                        to start
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Navbar -->
+    <nav class="navBar">
+        <div class="navheader">
+            <div class="header">
+                <h1>
+                    <a href="index.html">Snake mania</a>
+                </h1>
+            </div>
+        </div>
+    </nav>
+    <!-- Main game window -->
+    <div class="mainContainer">
+        <div class="innerContainer" id="gameWindow">
+            
+        </div>
+    </div>
+
 </body>
 
 </html>
